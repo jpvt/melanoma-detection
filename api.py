@@ -14,7 +14,7 @@ from utils.data.dataset import Dataset
 
 
 app = Flask(__name__)
-UPLOAD_FOLDER = "/home/detector/app/static/"
+UPLOAD_FOLDER = "static/data_storage"
 DEVICE = "cpu"
 MODEL = None
 MODEL_PATH = "model.bin"

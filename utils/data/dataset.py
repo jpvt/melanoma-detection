@@ -67,7 +67,7 @@ class Dataset:
             raise Exception("Backend not implemented")
 
         if self.channel_first:
-            image = np.tranpose(image, (2, 0, 1)).astype(np.float32)
+            image = np.transpose(image, (2, 0, 1)).astype(np.float32)
 
         
         return {

@@ -16,8 +16,8 @@ def resize_image(image_path, output_folder, resize):
     img.save(outpath)
 
 
-input_folder = "data/jpeg/train/"
-output_folder = "data/working/train/"
+input_folder = "../data_storage/jpeg/train/"
+output_folder = "../data_storage/working/train/"
 
 images = glob.glob(os.path.join(input_folder, "*.jpg"))
 Parallel(8)(
@@ -28,8 +28,8 @@ Parallel(8)(
     ) for i in tqdm(images)
 )
 
-input_folder = "data/jpeg/test/"
-output_folder = "data/working/test/"
+input_folder = "../data_storage/jpeg/test/"
+output_folder = "../data_storage/working/test/"
 
 images = glob.glob(os.path.join(input_folder, "*.jpg"))
 Parallel(8)(

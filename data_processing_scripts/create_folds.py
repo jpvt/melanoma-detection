@@ -5,7 +5,7 @@ from sklearn import model_selection
 
 if __name__ == "__main__":
 
-    df = pd.read_csv("data_storage/train.csv")
+    df = pd.read_csv("../data_storage/train.csv")
     df['kfold'] = -1
     # new and shuffled dataframe
     df = df.sample(frac=1).reset_index(drop=True)
@@ -16,4 +16,4 @@ if __name__ == "__main__":
 
         df.loc[v_, "kfold"] = fold_
 
-    df.to_csv("data_storage/train_folds.csv", index=False)
+    df.to_csv("../data_storage/train_folds.csv", index=False)

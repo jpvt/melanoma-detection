@@ -3,7 +3,7 @@ torch==1.7.0
 torchvision==0.2.1
 pretrainedmodels==0.7.4
 flask==1.1.2
-numpy==1.20.1
+numpy==1.21.0
 tqdm==4.59.0
 scikit-learn==0.24.1
 pillow
